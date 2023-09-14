@@ -29,33 +29,34 @@
             <a href="#undangan" class="btn btn-lg">Lihat Undangan</a>
         </main>
     </section>
-
-    <nav class="navbar navbar-expand-md sticky-top mynavbar">
+    <div class="mynavbar sticky-top">
+      <nav class="navbar navbar-expand-md bg-transparent">
         <div class="container">
-            <a class="navbar-brand" href="#">Iqbal & Aulia</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Iqbal & Aulia</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="#home">Home</a>
-                        <a class="nav-link" href="#info">Info</a>
-                        <a class="nav-link" href="#story">Story</a>
-                        <a class="nav-link" href="#gallery">Gallery</a>
-                        <a class="nav-link" href="#rsvp">RSVP</a>
-                        <a class="nav-link" href="#gifts">Gifts</a>
-                    </div>
-                </div>
+          <a class="navbar-brand" href="#">Iqbal & Aulia</a>
+          <button class="navbar-toggler border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Iqbal & Aulia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#info">Info</a>
+                <a class="nav-link" href="#story">Story</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
+                <a class="nav-link" href="#rsvp">RSVP</a>
+                <a class="nav-link" href="#gifts">Gifts</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </nav>
     </nav>
+    </div>
     <section id="home" class="home">
         <div class="container">
             <div class="row justify-content-center">
@@ -195,14 +196,18 @@
     <script>
         const stickyTop = document.querySelector('.sticky-top');
         const offcanvas = document.querySelector('.offcanvas');
-
-        offcanvas.addEventListener('show.bs.offcanvas',function(){
-            stickyTop.style.overflow = 'visible';
+    
+        offcanvas.addEventListener('show.bs.offcanvas', function () {
+          stickyTop.style.overflow = 'visible';
+          stickyTop.style.paddingRight = 0;
         });
-        offcanvas.addEventListener('hidden.bs.offcanvas',function(){
-            stickyTop.style.overflow = 'hidden';
+    
+        offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+          stickyTop.style.overflow = 'hidden';
+          stickyTop.style.paddingRight = 0;
         });
-    </script>
+    
+      </script>
 </body>
 
 </html>
