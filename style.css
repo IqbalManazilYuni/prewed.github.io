@@ -68,8 +68,8 @@ body {
 }
 
 .mynavbar .nav-link{
+    /* font-weight: 600; */
     text-transform: uppercase;
-
 }
 
 .home{
@@ -134,6 +134,41 @@ body {
     margin: auto;
     color: var(--pink);
   }
+  .info{
+    background-color: var(--bg);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+.info .alamat{
+  font-size: 1.1rem;
+}
+.info .description{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card{
+  background-color: rgba(255,255,255,0.2)!important;
+  color: white!important;
+  border: 1px solid #999;
+}
+
+.info .card-header{
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body{
+  font-size: 1rem;
+}
+
+.info .card-footer{
+  border-top: 1px solid #999;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
 
 /* Extra large */
 @media (max-width: 1200px) {
@@ -174,7 +209,7 @@ body {
         padding: 45px;
         margin: 3px;
       }
-    .maynavbar .nav-link{
+    .mynavbar .nav-link{
         font-size: 2rem;
         text-align: center;
     
